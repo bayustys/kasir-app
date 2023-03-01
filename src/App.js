@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Route, Switch } from "react-router-dom";
 import { NavbarComponent } from "./components";
-import { Home, Success } from "./pages";
+import { Home, Success, Cart } from "./pages";
 
 export default class App extends Component {
   render() {
@@ -12,6 +12,7 @@ export default class App extends Component {
         <Switch>
           <Route path="/" component={Home} exact />
           <Route path="/success" component={Success} exact />
+          <Route path="/cart" component={Cart} exact />
         </Switch>
       </div>
     );
