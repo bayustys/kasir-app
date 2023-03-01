@@ -39,23 +39,23 @@ const ModalKeranjang = ({ showModal, handleClose, keranjangDetail, jumlah, keter
               <Form.Label>Keterangan: </Form.Label>
               <Form.Control as="textarea" rows="3" name="keterangan" placeholder="Contoh: Pedas" value={keterangan} onChange={(event) => changeHandler(event)} />
             </Form.Group>
-            <Button variant="primary" type="submit" className="mr-2">
+            <Button variant="primary" type="submit" className="mb-1">
               Simpan
             </Button>
             <br />
-            <Button variant="danger" className="ml-2" onClick={() => handleDelete(keranjangDetail.id)}>
+            <Button variant="danger" className="mt-1" onClick={() => handleDelete(keranjangDetail.id)}>
               Hapus Pesanan
             </Button>
           </Form>
         </Modal.Body>
-        <Modal.Footer>
+        {/* <Modal.Footer>
           <Button variant="danger" onClick={() => handleDelete(keranjangDetail.id)}>
             Hapus Pesanan
           </Button>
           <Button variant="primary" type="submit" onSubmit={handleSubmit}>
             Simpan
           </Button>
-        </Modal.Footer>
+        </Modal.Footer> */}
       </Modal>
     );
   } else {
