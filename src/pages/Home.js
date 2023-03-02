@@ -130,7 +130,7 @@ export default class Home extends Component {
     const { menus, categoryYangDipilih, keranjangs } = this.state;
     return (
       <div className="mt-3">
-        <Container fluid>
+        <Container>
           <Row>
             <ListCategories changeCategory={this.changeCategory} categoryYangDipilih={categoryYangDipilih} />
             <Col className="mt-3">
